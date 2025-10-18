@@ -21,6 +21,7 @@ $user = $_SESSION['user'];
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">Dashboard</span>
     <a href="profile.php" class="btn btn-outline-light btn-sm">Profile</a>
+    <a href="matakuliah/index.php" class="btn btn-outline-light btn-sm">Matakuliah</a>
     <a href="logout.php" class="btn btn-outline-light btn-sm">Logout</a>
   </div>
 </nav>
