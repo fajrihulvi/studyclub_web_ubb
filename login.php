@@ -15,8 +15,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user) {
         $_SESSION['user'] = [
             'id' => $user['id'],
+            'username' => $user['username'],
             'nama_lengkap' => $user['nama_lengkap'],
-            'role' => $user['role']
+            'role' => $user['role'],
+            'email' => $user['email']
         ];
         header('Location: dashboard.php');
         exit;

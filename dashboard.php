@@ -20,14 +20,15 @@ $user = $_SESSION['user'];
 <nav class="navbar navbar-dark bg-dark">
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1">Dashboard</span>
+    <a href="profile.php" class="btn btn-outline-light btn-sm">Profile</a>
     <a href="logout.php" class="btn btn-outline-light btn-sm">Logout</a>
   </div>
 </nav>
 
 <div class="container mt-5">
     <div class="card p-4 shadow-sm">
-        <h4>Selamat datang, <?= htmlspecialchars($user['nama_lengkap']) ?> 👋</h4>
-        <p>Role Anda: <strong><?= htmlspecialchars($user['role']) ?></strong></p>
+        <h4>Selamat datang, <?= htmlspecialchars($user['nama_lengkap']) ?></h4>
+        <p>Email Anda: <strong><?= htmlspecialchars($user['email']) ?></strong></p>
 
         <?php if ($user['role'] === 'ADMIN'): ?>
             <div class="alert alert-info mt-3">Anda masuk sebagai <b>Administrator</b>.</div>
